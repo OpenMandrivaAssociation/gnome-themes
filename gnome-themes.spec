@@ -3,7 +3,7 @@
 
 Summary: Themes for GNOME
 Name: gnome-themes
-Version: 2.18.0
+Version: 2.18.1
 Release: %mkrel 1
 License: GPL
 Group: Graphical desktop/GNOME
@@ -103,5 +103,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/icons/LowContrastLargePrint/index.theme
 %{_datadir}/icons/Mist/index.theme
 %ghost %{_datadir}/icons/*/icon-theme.cache
-
-
