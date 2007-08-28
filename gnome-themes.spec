@@ -4,7 +4,7 @@
 Summary: Themes for GNOME
 Name: gnome-themes
 Version: 2.19.91
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPL
 Group: Graphical desktop/GNOME
 URL: http://www.gnome.org
@@ -42,12 +42,12 @@ cd clearlooks-%clearlooks
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
+cd clearlooks-%clearlooks/themes
+#%makeinstall_std
+cd ../..
 %makeinstall_std GTK_BINARY_VERSION=%gtkbinaryver
 #remove unpackaged files (not needed, since l10n is already in generated files)
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale 
-cd clearlooks-%clearlooks/themes
-%makeinstall_std
 # this is in gtk-engines2
 rm -rf %buildroot%_datadir/themes/Clearlooks/gtk-2.0
 
