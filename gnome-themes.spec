@@ -43,7 +43,7 @@ cd clearlooks-%clearlooks
 %install
 rm -rf $RPM_BUILD_ROOT
 cd clearlooks-%clearlooks/themes
-#%makeinstall_std
+%makeinstall_std
 cd ../..
 %makeinstall_std GTK_BINARY_VERSION=%gtkbinaryver
 #remove unpackaged files (not needed, since l10n is already in generated files)
