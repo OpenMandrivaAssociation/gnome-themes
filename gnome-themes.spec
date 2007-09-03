@@ -3,8 +3,8 @@
 
 Summary: Themes for GNOME
 Name: gnome-themes
-Version: 2.19.91
-Release: %mkrel 3
+Version: 2.19.92
+Release: %mkrel 1
 License: GPL
 Group: Graphical desktop/GNOME
 URL: http://www.gnome.org
