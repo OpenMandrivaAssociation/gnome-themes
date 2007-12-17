@@ -12,7 +12,6 @@ Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz
 Source1: http://prdownloads.sourceforge.net/clearlooks/clearlooks-%clearlooks.tar.bz2
 # gw remove warnings about unsupported options
 Patch: clearlooks-0.6.2-clearlooks-gtkrc-options.patch
-BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 Requires: gnome-icon-theme
 BuildRequires: gtk-engines2 >= 2.9.0
 BuildRequires:	libgnomeui2-devel
