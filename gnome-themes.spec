@@ -3,7 +3,7 @@
 
 Summary: Themes for GNOME
 Name: gnome-themes
-Version: 2.21.2
+Version: 2.21.5
 Release: %mkrel 1
 License: GPL
 Group: Graphical desktop/GNOME
@@ -68,9 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 %update_icon_cache Mist
 %update_icon_cache Crux
 %update_icon_cache HighContrastLargePrint
-%update_icon_cache LowContrast
 %update_icon_cache HighContrastLargePrintInverse 
-%update_icon_cache LowContrastLargePrint
 %update_icon_cache HighContrast
 %update_icon_cache HighContrast-SVG
 
@@ -81,9 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 %clean_icon_cache Mist
 %clean_icon_cache Crux
 %clean_icon_cache HighContrastLargePrint
-%clean_icon_cache LowContrast
 %clean_icon_cache HighContrastLargePrintInverse 
-%clean_icon_cache LowContrastLargePrint
 %clean_icon_cache HighContrast
 %clean_icon_cache HighContrast-SVG
 
@@ -102,7 +98,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/icons/HighContrastLargePrint/index.theme
 %{_datadir}/icons/HighContrastLargePrintInverse/index.theme
 %{_datadir}/icons/LargePrint/index.theme
-%{_datadir}/icons/LowContrast/index.theme
-%{_datadir}/icons/LowContrastLargePrint/index.theme
 %{_datadir}/icons/Mist/index.theme
 %ghost %{_datadir}/icons/*/icon-theme.cache
