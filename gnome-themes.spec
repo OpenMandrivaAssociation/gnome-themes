@@ -3,7 +3,7 @@
 
 Summary: Themes for GNOME
 Name: gnome-themes
-Version: 2.21.5
+Version: 2.21.91
 Release: %mkrel 1
 License: GPL
 Group: Graphical desktop/GNOME
@@ -34,6 +34,8 @@ This packages contains Themes for GNOME, such as :
 %prep
 %setup -q -a 1
 %patch
+#gw package from the future:
+touch *
 
 %build
 
