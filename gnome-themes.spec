@@ -3,7 +3,7 @@
 
 Summary: Themes for GNOME
 Name: gnome-themes
-Version: 2.22.0
+Version: 2.22.2
 Release: %mkrel 1
 License: GPL
 Group: Graphical desktop/GNOME
