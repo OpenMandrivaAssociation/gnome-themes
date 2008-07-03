@@ -3,9 +3,9 @@
 
 Summary: Themes for GNOME
 Name: gnome-themes
-Version: 2.22.2
+Version: 2.23.4
 Release: %mkrel 1
-License: GPL
+License: LGPLv2+
 Group: Graphical desktop/GNOME
 URL: http://www.gnome.org
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
