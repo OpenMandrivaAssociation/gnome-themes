@@ -28,8 +28,7 @@ BuildArch: noarch
 This packages contains Themes for GNOME, such as :
 - Clearlooks
 - High Contrast
-- Large Print
-- Low Constrat
+- Low Contrast
 
 %prep
 %setup -q -a 1
