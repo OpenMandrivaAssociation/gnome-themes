@@ -3,7 +3,7 @@
 
 Summary: Themes for GNOME
 Name: gnome-themes
-Version: 2.23.6
+Version: 2.23.90
 Release: %mkrel 1
 License: LGPLv2+
 Group: Graphical desktop/GNOME
@@ -14,14 +14,14 @@ Source1: http://prdownloads.sourceforge.net/clearlooks/clearlooks-%clearlooks.ta
 Patch: clearlooks-0.6.2-clearlooks-gtkrc-options.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 Requires: gnome-icon-theme
-BuildRequires: gtk-engines2 >= 2.9.0
+BuildRequires: gtk-engines2 >= 2.15.3
 BuildRequires:	libgnomeui2-devel
 BuildRequires:	libglade2.0-devel
 BuildRequires:  icon-naming-utils >= 0.8.0
-BuildRequires:  perl-XML-Parser
+BuildRequires:  intltool
 Conflicts: gtk-engines2 < 2.6
 Conflicts: gnome-themes-extras <= 0.8.1-4mdk
-Requires: gtk-engines2 >= 2.6
+Requires: gtk-engines2 >= 2.15.3
 BuildArch: noarch
 
 %description
