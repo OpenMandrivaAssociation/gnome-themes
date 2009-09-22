@@ -3,7 +3,7 @@
 
 Summary: Themes for GNOME
 Name: gnome-themes
-Version: 2.27.92
+Version: 2.28.0
 Release: %mkrel 1
 License: LGPLv2+
 Group: Graphical desktop/GNOME
