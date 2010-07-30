@@ -3,7 +3,7 @@
 
 Summary: Themes for GNOME
 Name: gnome-themes
-Version: 2.30.2
+Version: 2.31.4
 Release: %mkrel 1
 License: LGPLv2+
 Group: Graphical desktop/GNOME
@@ -90,6 +90,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/themes/*
 %dir %{_datadir}/icons/*
 %{_datadir}/icons/*/??x??
+%{_datadir}/icons/*/???x???
 %{_datadir}/icons/*/scalable
 %{_datadir}/icons/Clearlooks/index.theme
 %{_datadir}/icons/Crux/index.theme
