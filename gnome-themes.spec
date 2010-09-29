@@ -3,7 +3,7 @@
 
 Summary: Themes for GNOME
 Name: gnome-themes
-Version: 2.31.90
+Version: 2.32.0
 Release: %mkrel 1
 License: LGPLv2+
 Group: Graphical desktop/GNOME
@@ -33,8 +33,8 @@ This packages contains Themes for GNOME, such as :
 %prep
 %setup -q -a 1
 %patch
-#gw package from the future:
-touch *
+cd clearlooks-%clearlooks/
+autoreconf -fi
 
 %build
 
