@@ -33,14 +33,14 @@ This packages contains Themes for GNOME, such as :
 %prep
 %setup -q -a 1
 %patch -p0
-cd clearlooks-%clearlooks/
-autoreconf -fi
 
 %build
 
 ./configure --prefix=%_prefix --libdir=%_libdir --enable-all-themes
-cd clearlooks-%clearlooks
+pushd clearlooks-%clearlooks
+autoreconf -fi
 ./configure --prefix=%_prefix --libdir=%_libdir
+popd
 
 %make
 
