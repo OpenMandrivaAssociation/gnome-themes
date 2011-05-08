@@ -32,7 +32,7 @@ This packages contains Themes for GNOME, such as :
 
 %prep
 %setup -q -a 1
-%patch
+%patch -p0
 cd clearlooks-%clearlooks/
 autoreconf -fi
 
