@@ -45,13 +45,13 @@ popd
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 cd clearlooks-%clearlooks/themes
 %makeinstall_std
 cd ../..
 %makeinstall_std GTK_BINARY_VERSION=%gtkbinaryver
 #remove unpackaged files (not needed, since l10n is already in generated files)
-rm -rf $RPM_BUILD_ROOT%{_datadir}/locale 
+rm -rf %{buildroot}%{_datadir}/locale 
 # this is in gtk-engines2
 rm -rf %buildroot%_datadir/themes/Clearlooks/gtk-2.0
 
@@ -60,7 +60,7 @@ for dir in %buildroot%{_datadir}/icons/*; do
 done
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %post
 %update_icon_cache Clearlooks
