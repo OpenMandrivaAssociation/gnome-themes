@@ -14,13 +14,12 @@ Source1: http://prdownloads.sourceforge.net/clearlooks/clearlooks-%clearlooks.ta
 Patch0: clearlooks-0.6.2-clearlooks-gtkrc-options.patch
 BuildArch: noarch
 
-BuildRequires: gtk-engines2 >= 2.15.3
+BuildRequires:	gtk-engines3 >= 2.15.3
 BuildRequires:	libgnomeui2-devel
 BuildRequires:	libglade2.0-devel
 BuildRequires:  icon-naming-utils >= 0.8.0
 BuildRequires:  intltool
-Conflicts: gtk-engines2 < 2.6
-Requires: gtk-engines2 >= 2.15.3
+Requires: gtk-engines3
 Requires: gnome-icon-theme
 
 %description
