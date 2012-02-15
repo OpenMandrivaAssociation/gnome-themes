@@ -3,26 +3,25 @@
 
 Summary: Themes for GNOME
 Name: gnome-themes
-Version: 2.32.1
-Release: %mkrel 2
+Version: 3.0.0
+Release: 1
 License: LGPLv2+
 Group: Graphical desktop/GNOME
 URL: http://www.gnome.org
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
 Source1: http://prdownloads.sourceforge.net/clearlooks/clearlooks-%clearlooks.tar.bz2
 # gw remove warnings about unsupported options
-Patch: clearlooks-0.6.2-clearlooks-gtkrc-options.patch
-BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-Requires: gnome-icon-theme
+Patch0: clearlooks-0.6.2-clearlooks-gtkrc-options.patch
+BuildArch: noarch
+
 BuildRequires: gtk-engines2 >= 2.15.3
 BuildRequires:	libgnomeui2-devel
 BuildRequires:	libglade2.0-devel
 BuildRequires:  icon-naming-utils >= 0.8.0
 BuildRequires:  intltool
 Conflicts: gtk-engines2 < 2.6
-Conflicts: gnome-themes-extras <= 0.8.1-4mdk
 Requires: gtk-engines2 >= 2.15.3
-BuildArch: noarch
+Requires: gnome-icon-theme
 
 %description
 This packages contains Themes for GNOME, such as :
@@ -32,7 +31,7 @@ This packages contains Themes for GNOME, such as :
 
 %prep
 %setup -q -a 1
-%patch -p0
+%patch0 -p0
 
 %build
 
@@ -59,9 +58,6 @@ for dir in %buildroot%{_datadir}/icons/*; do
  touch $dir/icon-theme.cache
 done
 
-%clean
-rm -rf %{buildroot}
-
 %post
 %update_icon_cache Clearlooks
 %update_icon_cache HighContrastInverse
@@ -85,7 +81,6 @@ rm -rf %{buildroot}
 %clean_icon_cache HighContrast-SVG
 
 %files
-%defattr(-,root,root,-)
 %doc README NEWS AUTHORS 
 %{_datadir}/themes/*
 %dir %{_datadir}/icons/*
