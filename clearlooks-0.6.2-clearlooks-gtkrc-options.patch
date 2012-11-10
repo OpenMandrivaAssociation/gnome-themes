@@ -1,0 +1,36 @@
+--- clearlooks-0.6.2/themes/Clearlooks-DeepSky/gtk-2.0/gtkrc~	2005-06-10 15:21:47.000000000 +0200
++++ clearlooks-0.6.2/themes/Clearlooks-DeepSky/gtk-2.0/gtkrc	2007-08-28 21:31:23.000000000 +0200
+@@ -41,9 +41,6 @@ style "clearlooks-default"
+   engine "clearlooks" 
+   {
+     menubarstyle      = 2       # 0 = flat, 1 = sunken, 2 = flat gradient
+-    menuitemstyle     = 1       # 0 = flat, 1 = 3d-ish (gradient), 2 = 3d-ish (button)
+-    listviewitemstyle = 1       # 0 = flat, 1 = 3d-ish (gradient)
+-    progressbarstyle  = 0       # 0 = candy bar, 1 = flat
+   }
+ }
+ 
+--- clearlooks-0.6.2/themes/Clearlooks-Olive/gtk-2.0/gtkrc~	2005-06-10 14:18:31.000000000 +0200
++++ clearlooks-0.6.2/themes/Clearlooks-Olive/gtk-2.0/gtkrc	2007-08-28 21:32:16.000000000 +0200
+@@ -41,9 +41,6 @@ style "clearlooks-default"
+   engine "clearlooks" 
+   {
+     menubarstyle      = 2       # 0 = flat, 1 = sunken, 2 = flat gradient
+-    menuitemstyle     = 1       # 0 = flat, 1 = 3d-ish (gradient), 2 = 3d-ish (button)
+-    listviewitemstyle = 1       # 0 = flat, 1 = 3d-ish (gradient)
+-    progressbarstyle  = 0       # 0 = candy bar, 1 = flat
+   }
+ }
+ 
+--- clearlooks-0.6.2/themes/Clearlooks-Quicksilver/gtk-2.0/gtkrc~	2005-06-10 15:21:47.000000000 +0200
++++ clearlooks-0.6.2/themes/Clearlooks-Quicksilver/gtk-2.0/gtkrc	2007-08-28 21:31:57.000000000 +0200
+@@ -41,9 +41,6 @@ style "clearlooks-default"
+   engine "clearlooks" 
+   {
+     menubarstyle      = 2       # 0 = flat, 1 = sunken, 2 = flat gradient
+-    menuitemstyle     = 1       # 0 = flat, 1 = 3d-ish (gradient), 2 = 3d-ish (button)
+-    listviewitemstyle = 1       # 0 = flat, 1 = 3d-ish (gradient)
+-    progressbarstyle  = 0       # 0 = candy bar, 1 = flat
+   }
+ }
+ 
