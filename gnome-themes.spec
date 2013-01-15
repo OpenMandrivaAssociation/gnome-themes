@@ -12,6 +12,7 @@ Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz
 Source1:	http://prdownloads.sourceforge.net/clearlooks/clearlooks-%{clearlooks}.tar.bz2
 # gw remove warnings about unsupported options
 Patch:		clearlooks-0.6.2-clearlooks-gtkrc-options.patch
+Patch1:		clearlooks-automake-1.13.patch
 Requires:	gnome-icon-theme
 BuildRequires:	pkgconfig(gtk-engines-2)
 BuildRequires:	pkgconfig(libgnomeui-2.0)
@@ -30,6 +31,7 @@ This packages contains Themes for GNOME, such as :
 %prep
 %setup -q -a 1
 %patch -p0
+%patch1 -p1 -b .am13~
 
 %build
 ./configure --prefix=%{_prefix} --libdir=%{_libdir} --enable-all-themes

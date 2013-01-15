@@ -1,0 +1,20 @@
+--- gnome-themes-2.32.1/clearlooks-0.6.2/configure.in.bero	2013-01-15 22:24:30.632653355 +0100
++++ gnome-themes-2.32.1/clearlooks-0.6.2/configure.in	2013-01-15 22:25:08.241201405 +0100
+@@ -1,14 +1,14 @@
+ # Process this file with autoconf to produce a configure script.
+-AC_INIT(src/clearlooks_style.c)
++AC_INIT(gtk-clearlooks-engine, 0.5)
+ THEME="clearlooks"
+ 
+ AC_PREREQ(2.52)
+ 
+ VERSION=0.5
+ PACKAGE=gtk-${THEME}-engine
+-AM_INIT_AUTOMAKE($PACKAGE, $VERSION)
++AM_INIT_AUTOMAKE
+ 
+-AM_CONFIG_HEADER(config.h)
++AC_CONFIG_HEADERS([config.h])
+ AM_MAINTAINER_MODE
+ 
+ ## libtool support (for plugins)
