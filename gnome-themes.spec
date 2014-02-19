@@ -85,7 +85,7 @@ done
 %dir %{_iconsdir}/*
 %{_iconsdir}/icons/*/??x??
 %{_iconsdir}/icons/*/???x???
-%{_iconsdir}/icons/*/scalable
+%{_iconsdir}/icons/*/scalable/*
 %{_iconsdir}/Clearlooks/index.theme
 %{_iconsdir}/Crux/index.theme
 %{_iconsdir}/HighContrast-SVG/index.theme
