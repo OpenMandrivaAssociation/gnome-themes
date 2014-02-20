@@ -82,7 +82,7 @@ done
 %files
 %doc README NEWS AUTHORS 
 %{_datadir}/themes/*
-%dir %{_iconsdir}/*
+%dir %{_iconsdir}/icons/*
 %{_iconsdir}/icons/*/*
 %{_iconsdir}/icons/*/*
 %{_iconsdir}/icons/*/scalable/*
