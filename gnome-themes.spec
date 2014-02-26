@@ -83,9 +83,9 @@ done
 %doc README NEWS AUTHORS 
 %{_datadir}/themes/*
 %dir %{_iconsdir}/*
-%{_iconsdir}/icons/*/??x??
-%{_iconsdir}/icons/*/???x???
-%{_iconsdir}/icons/*/scalable
+%{_iconsdir}/*/??x??
+%{_iconsdir}/*/???x???
+%{_iconsdir}/*/scalable
 %{_iconsdir}/Clearlooks/index.theme
 %{_iconsdir}/Crux/index.theme
 %{_iconsdir}/HighContrast-SVG/index.theme
