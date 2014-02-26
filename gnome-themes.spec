@@ -82,10 +82,10 @@ done
 %files
 %doc README NEWS AUTHORS 
 %{_datadir}/themes/*
-%dir %{_iconsdir}/icons/*
-%{_iconsdir}/icons/*/*
-%{_iconsdir}/icons/*/*
-%{_iconsdir}/icons/*/scalable/*
+%dir %{_iconsdir}/*
+%{_iconsdir}/*/??x??
+%{_iconsdir}/*/???x???
+%{_iconsdir}/*/scalable
 %{_iconsdir}/Clearlooks/index.theme
 %{_iconsdir}/Crux/index.theme
 %{_iconsdir}/HighContrast-SVG/index.theme
