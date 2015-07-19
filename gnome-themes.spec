@@ -5,7 +5,7 @@
 Summary:	Themes for GNOME
 Name:		gnome-themes
 Version:	2.32.1
-Release:	11
+Release:	12
 License:	LGPLv2+
 Group:		Graphical desktop/GNOME
 Url:		http://www.gnome.org
