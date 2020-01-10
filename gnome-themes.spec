@@ -32,7 +32,7 @@ This packages contains Themes for GNOME, such as :
 
 %prep
 %setup -q -a 1
-%apply_patches
+%autopatch -p1
 
 %build
 ./configure --prefix=%{_prefix} --libdir=%{_libdir} --enable-all-themes
