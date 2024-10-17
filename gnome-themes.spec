@@ -8,7 +8,7 @@ Version:	2.32.1
 Release:	14
 License:	LGPLv2+
 Group:		Graphical desktop/GNOME
-Url:		http://www.gnome.org
+Url:		https://www.gnome.org
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-themes/%{url_ver}/%{name}-%{version}.tar.bz2
 Source1:	http://prdownloads.sourceforge.net/clearlooks/clearlooks-%{clearlooks}.tar.bz2
 # gw remove warnings about unsupported options
